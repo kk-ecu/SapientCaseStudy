@@ -18,7 +18,7 @@ import java.util.UUID;
  * @author Kundan Kumar
  */
 @RestController
-@RequestMapping("api/screen")
+@RequestMapping("api/user")
 public class UserController {
 
     private UserService userService;

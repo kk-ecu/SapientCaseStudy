@@ -17,6 +17,9 @@ public class Screen {
     private UUID id;
     private String name;
     private int numberOfSeats;
+
+
+
     @CollectionTable(name = "allottedSeats")
     @ElementCollection
     private Map<Integer,Boolean> seatsMapping=new HashMap<>();
@@ -54,5 +57,13 @@ public class Screen {
 
     public void setMovie(Movie movie) {
         this.movie = movie;
+    }
+
+    public Map<Integer, Boolean> getSeatsMapping() {
+        return seatsMapping;
+    }
+
+    public void setSeatsMapping(Map<Integer, Boolean> seatsMapping) {
+        this.seatsMapping = seatsMapping;
     }
 }
